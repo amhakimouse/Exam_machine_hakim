@@ -1,0 +1,9 @@
+Options -Indexes
+RewriteEngine On
+
+# Allow direct access to real files and directories (CSS, JS, images, etc.)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route everything else through the front controller
+RewriteRule ^ index.php [QSA,L]

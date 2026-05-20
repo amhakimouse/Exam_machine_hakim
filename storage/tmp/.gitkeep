@@ -1,0 +1,3 @@
+# This directory is used by PdfController to store temporary PDF files
+# before they are attached to emails. Files are deleted immediately after sending.
+# It must exist and be writable by the web server process.

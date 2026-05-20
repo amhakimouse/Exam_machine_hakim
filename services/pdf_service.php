@@ -12,7 +12,7 @@ function generatePDF($html, $filename = 'document.pdf', $outputMode = 'I') {
             'margin_footer' => 10,
         ]);
 
-        $mpdf->SetProtected(['print']);
+        $mpdf->SetProtection(['print']);
         $mpdf->SetTitle("Exam Generated Document");
         $mpdf->SetAuthor("Exam Machine");
         $mpdf->SetDisplayMode('fullpage');
@@ -24,8 +24,7 @@ function generatePDF($html, $filename = 'document.pdf', $outputMode = 'I') {
         // Mode F: save to a local file
         $mpdf->Output($filename, $outputMode);
         
-    } catch (\Mpdf\MpdfException $e) {
+    } catch (\Throwable $e) {
         error_log("mPDF Error: " . $e->getMessage());
-        echo "An error occurred while generating the PDF.";
     }
 }
