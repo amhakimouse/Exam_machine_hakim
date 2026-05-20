@@ -1,0 +1,11 @@
+/vendor/
+.env
+*.log
+/tool-outputs/
+exam_report.pdf
+composer.phar
+.phpunit.result.cache
+.DS_Store
+Thumbs.db
+exam_annonce.md
+test_pdf.php
