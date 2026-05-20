@@ -58,6 +58,3 @@ Point your web server (Apache/Nginx) document root to the `public/` directory.
 -   `public/`: Front controller and public assets (JS, CSS).
 -   `database/`: SQL schema and migration scripts.
 -   `services/`: Core helper services for Mail and PDF generation.
-
-## 📝 License
-This project was developed as part of the Advanced PHP Module at **ENSA Marrakech**.
